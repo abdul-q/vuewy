@@ -20,7 +20,7 @@ const getters = {
             return {
               title: product.title,
               price: product.price,
-              quantity: cartItem.quantity
+              quantity: cartItem.quantityto
             }
         })
     },
