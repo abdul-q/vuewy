@@ -2,8 +2,9 @@ import Vue from "vue";
 import Vuex from "vuex";
 import productList from "@/store/modules/productList";
 import cart from "@/store/modules/cart";
+import formc from "@/store/modules/cart";
 
-import {} from "vuex-map-fields";
+// import { getField, updateField } from "vuex-map-fields"
 
 Vue.use(Vuex);
 
@@ -13,6 +14,8 @@ export default new Vuex.Store({
   actions: {},
   modules: {
     productList,
-    cart
-  }
+    cart,
+    formc
+  },
+  getters: {}
 });

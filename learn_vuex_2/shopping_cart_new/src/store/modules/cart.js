@@ -15,7 +15,8 @@ const getters = {
         quantity: cartItem.quantity
       };
     })        
-  }
+  },
+  
 }
 
 const actions = {
@@ -50,11 +51,11 @@ const mutations = {
     cartItem.quantity++
   },   
   
-  setCartItems: (state, cart) => state.cart = cart,
+  setCartItems: (state, cart) => state.cart = cart
 }
 
 export default {
-  // namespaced: true,
+  namespaced: true,
   state,
   getters,
   actions,

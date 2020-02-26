@@ -16,7 +16,7 @@ export default {
   name: 'ShoppingCart',
 
   computed: {
-    ...mapGetters([ 'cartProducts' ])
+    ...mapGetters('cart', [ 'cartProducts' ])
   }
 }
 </script>

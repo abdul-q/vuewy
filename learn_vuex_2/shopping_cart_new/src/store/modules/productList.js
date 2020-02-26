@@ -2,8 +2,7 @@ import shop from '@/api/shop';
 
 const state = {
     // Equivalent to data()
-    products: [],
-    messages: 'Hello Happy People'
+    products: []
 };
 
 const getters = {
@@ -30,7 +29,7 @@ const actions = {
         });
     },
 
-    // getMessage: (commit, value) => commit('updateMesage', value)
+    // setMessage: (commit, value) => commit('updateMesage', value)
     // setMessage: (state, value) => state.message = value
 };
 
@@ -55,7 +54,7 @@ const mutations = {
         product.inventory--
     },
 
-    updateMessage: (state, value) => state.message = value
+    // updateMessage: (state, value) => state.message = value
     
 };
 
