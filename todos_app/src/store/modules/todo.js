@@ -26,6 +26,11 @@ const actions = {
     },
 
     async addTodo({ commit }, title) {
+        // payload = {
+        //     title: "",
+        //     completed: false
+        // }
+        // const response = await axios.post('https://jsonplaceholder.typicode.com/todos', payload);
         const response = await axios.post('https://jsonplaceholder.typicode.com/todos',
         { title, completed: false });
 
