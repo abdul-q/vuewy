@@ -2,7 +2,8 @@
   <div id="app">
     <div class="container">
     <add-todo />
-      <Todo />
+    <filter-todo />
+    <Todo />
     </div>   
     <router-view />
   </div>
@@ -11,12 +12,14 @@
 <script>
 import Todo from '@/components/Todo.vue';
 import AddTodo from '@/components/AddTodo.vue'
+import FilterTodo from '@/components/FilterTodo.vue'
 
 export default {
   name: 'app',
   components: {
     Todo,
-    AddTodo
+    AddTodo,
+    FilterTodo
   }
   
 }
